@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D13F9CF1-92DC-4058-BA3B-8EAE6FE8B27D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContainerUS\AccountUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\AccountUS.Designer.cs">
+      <DependentUpon>AccountUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AddRAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AddRAD.Designer.cs">
+      <DependentUpon>AddRAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\PhongKeToanBO.cs" />
+    <Compile Include="DataObject\KTKLDTO.cs" />
+    <Compile Include="DataObject\LuongDTO.cs" />
+    <Compile Include="Form\EditSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EditSalary.Designer.cs">
+      <DependentUpon>EditSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\PhongBanUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\PhongBanUS.Designer.cs">
+      <DependentUpon>PhongBanUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\RAD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\RAD.Designer.cs">
+      <DependentUpon>RAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\RADEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\RADEmp.Designer.cs">
+      <DependentUpon>RADEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\StatusUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\StatusUS.Designer.cs">
+      <DependentUpon>StatusUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUS\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\AdminBO.cs" />
+    <Compile Include="BusinessObject\PeoPleBO.cs" />
+    <Compile Include="BusinessObject\PhongBanBO.cs" />
+    <Compile Include="BusinessObject\PhongQuanLyBO.cs" />
+    <Compile Include="ContainerUS\DangNhapUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\DangNhapUS.Designer.cs">
+      <DependentUpon>DangNhapUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\InfoCompanyUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\InfoCompanyUS.Designer.cs">
+      <DependentUpon>InfoCompanyUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUS\LabelUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\LabelUS.Designer.cs">
+      <DependentUpon>LabelUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\ThanNhanUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\ThanNhanUS.Designer.cs">
+      <DependentUpon>ThanNhanUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUS\ButtonClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\ButtonClose.Designer.cs">
+      <DependentUpon>ButtonClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUS\ComboBoxUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\ComboBoxUS.Designer.cs">
+      <DependentUpon>ComboBoxUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataObject\AdminDTO.cs" />
+    <Compile Include="DataObject\ChucVuDTO.cs" />
+    <Compile Include="DataObject\NhanVienDTO.cs" />
+    <Compile Include="DataObject\PeopleDTO.cs" />
+    <Compile Include="DataObject\PhongBanDTO.cs" />
+    <Compile Include="DataObject\PhongKeToanDTO.cs" />
+    <Compile Include="DataObject\PhongQuanLyDTO.cs" />
+    <Compile Include="DataObject\PhoPhongDTO.cs" />
+    <Compile Include="DataObject\ThanNhanDTO.cs" />
+    <Compile Include="DataObject\TruongPhongDTO.cs" />
+    <Compile Include="ControlUS\DayUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\DayUS.Designer.cs">
+      <DependentUpon>DayUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\PeoPleUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\PeoPleUS.Designer.cs">
+      <DependentUpon>PeoPleUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LuongCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LuongCV.Designer.cs">
+      <DependentUpon>LuongCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\Mypaint.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessObject\Providers\Provider.cs" />
+    <Compile Include="ControlUS\SexControlUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\SexControlUS.Designer.cs">
+      <DependentUpon>SexControlUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerUS\TableSalary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerUS\TableSalary.Designer.cs">
+      <DependentUpon>TableSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUS\TextBoxUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUS\TextBoxUS.Designer.cs">
+      <DependentUpon>TextBoxUS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ContainerUS\AccountUS.resx">
+      <DependentUpon>AccountUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AddRAD.resx">
+      <DependentUpon>AddRAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EditSalary.resx">
+      <DependentUpon>EditSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\PhongBanUS.resx">
+      <DependentUpon>PhongBanUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\RAD.resx">
+      <DependentUpon>RAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\RADEmp.resx">
+      <DependentUpon>RADEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\StatusUS.resx">
+      <DependentUpon>StatusUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUS\BaseControl.resx">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\DangNhapUS.resx">
+      <DependentUpon>DangNhapUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\InfoCompanyUS.resx">
+      <DependentUpon>InfoCompanyUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\ThanNhanUS.resx">
+      <DependentUpon>ThanNhanUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUS\ButtonClose.resx">
+      <DependentUpon>ButtonClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUS\ComboBoxUS.resx">
+      <DependentUpon>ComboBoxUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUS\DayUS.resx">
+      <DependentUpon>DayUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\PeoPleUS.resx">
+      <DependentUpon>PeoPleUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LuongCV.resx">
+      <DependentUpon>LuongCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ControlUS\SexControlUS.resx">
+      <DependentUpon>SexControlUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerUS\TableSalary.resx">
+      <DependentUpon>TableSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\final.DataObject.ThanNhanDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.AdminDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.ChucVuDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.NhanVienDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.PeopleDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.PhongBanDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.PhongKeToanDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.PhongQuanLyDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.PhoPhongDTO.datasource" />
+    <None Include="Properties\DataSources\project.DataObject.TruongPhongDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\false.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\true.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA\DA.csproj">
+      <Project>{c2f69859-08e3-454a-a2e5-24d6f7518dbb}</Project>
+      <Name>DA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-group-woman-man-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-group-woman-man-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\black_white_line_silver_186_2048x1152.jpg" />
+    <None Include="Resources\Webp.net-resizeimage %281%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2810%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2812%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %282%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2820%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2821%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2823%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2824%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2826%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2827%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2828%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %2830%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %285%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %287%29.png" />
+    <None Include="Resources\Webp.net-resizeimage %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sort-right-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Ring.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Ring %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Ring %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box-important-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-empty-set-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waste-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waste-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-waste-filled-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_dandau_01-min.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

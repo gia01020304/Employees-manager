@@ -1,0 +1,10 @@
+D:\gia\WF\Finaly\DA\bin\Debug\DA.dll
+D:\gia\WF\Finaly\DA\bin\Debug\DA.pdb
+D:\gia\WF\Finaly\DA\obj\Debug\DA.dll
+D:\gia\WF\Finaly\DA\obj\Debug\DA.pdb
+D:\gia\WF\Finaly\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Finaly (3)\Source\DA\bin\Debug\DA.dll
+C:\Users\Administrator\Downloads\Finaly (3)\Source\DA\bin\Debug\DA.pdb
+C:\Users\Administrator\Downloads\Finaly (3)\Source\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Finaly (3)\Source\DA\obj\Debug\DA.dll
+C:\Users\Administrator\Downloads\Finaly (3)\Source\DA\obj\Debug\DA.pdb
